@@ -1,0 +1,64 @@
+import React from 'react'
+import img1 from '../../assets/about/leaves.png'
+import img2 from '../../assets/about/flowers.png'
+import img3 from '../../assets/about/direction.png'
+import img4 from '../../assets/about/blue_boat.png'
+
+function whatiam() {
+  return (
+    <>
+    {/* What I am Section */}
+    <div className="px-6 md:px-15 py-10 gap-8 bg-gray-100">
+      <h1 className="text-4xl md:text-6xl font-bold font-title text-center mb-15 mt-10">What I’m?</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* 1st Card */}
+        <div className="flex items-center gap-4 border-1 border-white p-6 ">
+          <img src={img1} alt="Product Design Learning Hub" className="w-30 h-30 object-contain md:w-40 md:h-40" />
+          <div>
+            <h2 className="text-pink-500 text-lg md:text-2xl font-bold mb-2">Product Design Learning Hub</h2>
+            <p className="text-gray-800 text-[12px] md:text-lg leading-relaxed font-body">
+              Dive into my comprehensive UX/UI courses, designed to help you become a confident product designer.
+            </p>
+          </div>
+        </div>
+
+        {/* 2nd Card */}
+        <div className="flex items-center gap-4 border-1 border-white p-6">
+          <img src={img2} alt="SaaS Design Partner" className="w-30 h-30 object-contain md:w-40 md:h-40" />
+          <div>
+            <h2 className="text-green-700 text-lg md:text-2xl font-bold mb-2">SaaS Design Partner</h2>
+            <p className="text-gray-800 text-[12px] md:text-lg leading-relaxed font-body">
+              I work with B2B and B2C startups, offering strategic design consulting to help your SaaS products thrive.
+            </p>
+          </div>
+        </div>
+
+        {/* 3rd Card */}
+        <div className="flex items-center gap-4 border-1 border-white p-6">
+          <img src={img3} alt="Your Personal Design Mentor" className="w-30 h-30 object-contain md:w-40 md:h-40" />
+          <div>
+            <h2 className="text-black text-lg md:text-2xl font-bold mb-2">Your Personal Design Mentor</h2>
+            <p className="text-gray-800 text-[12px] md:text-lg leading-relaxed font-body">
+              Feeling lost in your UX Role? Book a one-on-one session to get a clear roadmap and review your portfolio.
+            </p>
+          </div>
+        </div>
+
+        {/* 4th Card */}
+        <div className="flex items-center gap-4 border-1 border-white p-6">
+          <img src={img4} alt="Design Consultant" className="w-30 h-30 object-contain md:w-40 md:h-40" />
+          <div>
+            <h2 className="text-blue-700 text-lg md:text-2xl font-bold mb-2">Design Consultant</h2>
+            <p className="text-gray-800 text-[12px] md:text-lg leading-relaxed font-body">
+              Lack of UX direction or strategy of your product? Get a clear design guidance with focused strategy sprints.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default whatiam
